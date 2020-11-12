@@ -6,15 +6,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './styles'
 import './scripts'
-import IndexView from './views/IndexView'
-import ResultsView from './views/ResultsView'
+// import IndexView from './views/IndexView'
+// import ResultsView from './views/ResultsView'
+import IndexController from './controllers/IndexController'
+import ResultsController from './controllers/ResultsController'
+
 
 
 ReactDOM.render(
    <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={IndexView} />
-      <Route exact path="/results" component={ResultsView} />
+      <Route exact path="/" component={IndexController} />
+      <Route exact path="/results" component={ResultsController} />
     </Switch>
    </BrowserRouter>
   ,document.getElementById('root')
