@@ -1098,9 +1098,14 @@
   background-color: #070707;
 }
 
+.af-view .af-class-text-field-2 {
+  padding-bottom: 122px;
+}
+
 .af-view .af-class-form {
-  margin-bottom: -200px;
-  padding-bottom: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
 }
 
 @media screen and (max-width: 991px) {
