@@ -47,7 +47,7 @@ class ResultsView extends React.Component {
 
   render() {
     const proxies = Controller !== ResultsView ? transformProxies(this.props.children) : {
-      'message': [],
+
     }
 
     return (
@@ -89,7 +89,7 @@ class ResultsView extends React.Component {
                   <div className="af-class-label af-class-cc-light">*</div>
                   <h2>The accuracy percentage is:</h2>
                   <div className="af-class-container-5 w-container">
-                    {map(proxies['message'], props => <a href="#" {...{...props, className: `af-class-button-2 w-button ${props.className || ''}`}}>{props.children}</a>)}
+                    <a href="#" ap-sock="message" className="af-class-button-2 w-button" />
                   </div>
                 </div>
               </div>
