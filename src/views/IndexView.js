@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { createScope, map, transformProxies } from './helpers'
+import ContactFormView from './ContactFormView'
 
 const scripts = [
   fetch("https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f8e5f029f2850ba2966936f").then(body => body.text()),
@@ -47,7 +48,7 @@ class IndexView extends React.Component {
 
   render() {
     const proxies = Controller !== IndexView ? transformProxies(this.props.children) : {
-
+      'contact-form': [],
     }
 
     return (
@@ -77,25 +78,7 @@ class IndexView extends React.Component {
               </div>
             </div><img src="images/iconfinder_additional_icons-10_2239886.png" loading="eager" width={80} height={80} srcSet="images/iconfinder_additional_icons-10_2239886-p-500.png 500w, images/iconfinder_additional_icons-10_2239886.png 512w" sizes="(max-width: 479px) 100vw, 80px" alt className="af-class-image-3" />
             <div className="af-class-container-4 w-container"><img src="images/Deep-Fakes_1.png" loading="lazy" alt className="af-class-image-2" /></div>
-            <div id="contact-form" ap-el="contact-form" ap-sock="contact-form" className="af-class-contact-form-2">
-              <div className="w-container">
-                <h2>Search accuracy by Text</h2>
-                <p>Copy the text from any article you would like to compare to our Golden Sources and click on the Submit Button</p>
-                <div className="w-form">
-                  <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="post" redirect="/projects" data-redirect="/projects">
-                    <div className="af-class-contact-form-grid-2">
-                      <div id="w-node-0e9e3bc05e7c-5cb757be" className="af-class-div-block-2"><input type="text" ap-sock="date" className="w-input" maxLength={256} name="date" data-name="date" placeholder="Enter Article Date" id="date" required /><textarea data-name="Message" maxLength={5000} id="Message" name="Message" placeholder="Enter your text here. . ." ap-sock="text" className="af-class-textarea w-input" defaultValue={""} /></div>
-                    </div><input type="submit" defaultValue="Submit" data-wait="Please wait..." ap-sock="submit" className="af-class-submit-button w-button" />
-                  </form>
-                  <div className="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                  </div>
-                  <div className="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ContactFormView.Controller-af-sock-contact-form />
             <div className="af-class-section af-class-cc-store-home-wrap">
               <div className="af-class-container">
                 <div className="af-class-motto-wrap" />
