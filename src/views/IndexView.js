@@ -76,11 +76,11 @@ class IndexView extends React.Component {
                   <div>join us</div>
                 </a>
               </div>
-            </div><img src="images/iconfinder_additional_icons-10_2239886.png" loading="eager" width={80} height={80} srcSet="images/iconfinder_additional_icons-10_2239886-p-500.png 500w, images/iconfinder_additional_icons-10_2239886.png 512w" sizes="(max-width: 479px) 100vw, 80px" alt className="af-class-image-3" />
+            </div><img src="images/iconfinder_additional_icons-10_2239886.png" loading="eager" width={80} height={80} srcSet="images/iconfinder_additional_icons-10_2239886-p-500.png 500w, images/iconfinder_additional_icons-10_2239886.png 512w" sizes="(max-width: 479px) 95vw, 80px" alt className="af-class-image-3" />
             <div className="af-class-container-4 w-container"><img src="images/Deep-Fakes_1.png" loading="lazy" alt className="af-class-image-2" /></div>
-            <section className="af-class-contact-form-2">
+            <div className="af-class-container-6 w-container">
               <ArticleBoxView.Controller-af-sock-article-box />
-            </section>
+            </div>
             <div className="af-class-section af-class-cc-store-home-wrap">
               <div className="af-class-container">
                 <div className="af-class-motto-wrap" />
