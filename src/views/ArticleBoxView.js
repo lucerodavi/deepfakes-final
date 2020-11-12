@@ -46,7 +46,7 @@ class ArticleBoxView extends React.Component {
 
   render() {
     const proxies = Controller !== ArticleBoxView ? transformProxies(this.props.children) : {
-      'article-text': [],
+      'article': [],
     }
 
     return (
@@ -61,9 +61,9 @@ class ArticleBoxView extends React.Component {
             <h2>Search accuracy by Text</h2>
             <p>Copy the text from any article you would like to compare to our Golden Sources and click on the Submit Button</p>
             <div className="w-form">
-              <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="post" redirect="/results" data-redirect="/results">
+              <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="post" redirect="/results" data-redirect="/results" className="af-class-form">
                 <div className="af-class-contact-form-grid-2">
-                  <div id="w-node-0e9e3bc05e7c-5cb757be" className="af-class-div-block-2">{map(proxies['article-text'], props => <textarea data-name="Message" maxLength={5000} id="Message" name="Message" placeholder="Enter your text here. . ." required {...{...props, className: `af-class-textarea w-input ${props.className || ''}`}}>{props.children}</textarea>)}</div>
+                  <div id="w-node-0e9e3bc05e7c-5cb757be" className="af-class-div-block-2">{map(proxies['article'], props => <textarea data-name maxLength={5000} required placeholder="Enter your text here. . ." id="article-box" {...{...props, className: `af-class-textarea w-input ${props.className || ''}`}}>{props.children}</textarea>)}</div>
                 </div><input type="submit" defaultValue="Submit" data-wait="Please wait..." ap-sock="submit" className="af-class-submit-button w-button" />
               </form>
               <div className="w-form-done">

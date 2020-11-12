@@ -1098,6 +1098,11 @@
   background-color: #070707;
 }
 
+.af-view .af-class-form {
+  margin-bottom: -200px;
+  padding-bottom: 0px;
+}
+
 @media screen and (max-width: 991px) {
   .af-view .af-class-section.af-class-cc-cta {
     padding-right: 0px;
