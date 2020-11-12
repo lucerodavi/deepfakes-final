@@ -6,10 +6,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './styles'
 import './scripts'
-import IndexView from './views/IndexView'
-import ResultsView from './views/ResultsView'
-//import IndexController from './controllers/IndexController'
-//import ResultsController from './controllers/ResultsController'
+//import IndexView from './views/IndexView'
+//import ResultsView from './views/ResultsView'
+import IndexController from './controllers/IndexController'
+import ResultsController from './controllers/ResultsController'
 
 ReactDOM.render(
    <BrowserRouter>
