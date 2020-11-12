@@ -1,6 +1,5 @@
 /* eslint-disable */
 
-export { default as ArticleBoxView } from './ArticleBoxView'
 export { default as UnauthorizedView } from './UnauthorizedView'
 export { default as NotFoundView } from './NotFoundView'
 export { default as AboutView } from './AboutView'
