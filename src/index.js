@@ -8,14 +8,14 @@ import './styles'
 import './scripts'
 import IndexView from './views/IndexView'
 import ResultsView from './views/ResultsView'
-import IndexController from './controllers/IndexController'
-import ResultsController from './controllers/ResultsController'
+//import IndexController from './controllers/IndexController'
+//import ResultsController from './controllers/ResultsController'
 
 ReactDOM.render(
    <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={IndexController} />
-      <Route exact path="/results" component={ResultsController} />
+      <Route exact path="/" component={IndexView} />
+      <Route exact path="/results" component={ResultsView} />
     </Switch>
    </BrowserRouter>
   ,document.getElementById('root')
