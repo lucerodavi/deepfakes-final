@@ -1,14 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './styles'
+import './scripts'
+import IndexView from './views/IndexView'
+import ResultsView from './views/ResultsView'
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+   <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={IndexView} />
+      <Route exact path="/results" component={ResultsView} />
+    </Switch>
+   </BrowserRouter>
+  ,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
