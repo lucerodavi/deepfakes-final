@@ -6,11 +6,10 @@ class ContactFormView extends React.Component {
 
   render() {
     return(
-      <ContactFormView>
-  //      <date onChange={this.setDate} />
+      <ArticleBoxView>
         <text onChange={this.setText} />
         <submit onClick={this.submit} />
-      </ContactFormView>
+      </ArticleBoxView>
     )
   }
 
