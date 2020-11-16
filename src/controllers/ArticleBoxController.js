@@ -7,17 +7,17 @@ class ArticleBoxController extends React.Component {
   render() {
     return(
       <ArticleBoxView>
-      //  <article onChange={this.setArticle} />
+        <article onChange={this.setArticle} />
         <submit onClick={this.submit} />
       </ArticleBoxView>
     )
   }
 
-  // setArticle = (e) => {
-  //   this.setState({
-  //     article: e.target.value
-  //   })
-  // }
+  setArticle = (e) => {
+    this.setState({
+      article: e.target.value
+    })
+  }
 
   submit = () => {
     this.props.history.push('/projects', {

@@ -3,7 +3,7 @@ import IndexView from '../views/IndexView'
 
 export default (props) => (
   <IndexView>
-    <article-box {...props} />
+    < contact-form {...props} />
   </IndexView>
 
 )

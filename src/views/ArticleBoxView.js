@@ -47,7 +47,7 @@ class ArticleBoxView extends React.Component {
   render() {
     const proxies = Controller !== ArticleBoxView ? transformProxies(this.props.children) : {
       'article-box': [],
-      'article': [],
+      'textarticle': [],
       'submit': [],
     }
 
@@ -67,7 +67,7 @@ class ArticleBoxView extends React.Component {
                 <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="post" redirect="/results" data-redirect="/results" className="af-class-form">
                   <div className="af-class-contact-form-grid-2">
                     <div id="w-node-0e9e3bc05e7c-5cb757be" className="af-class-div-block-2" />
-                  </div>{map(proxies['article'], props => <input type="text" maxLength={256} name="textarticle" data-name="textarticle" placeholder="Enter your text here. . ." id="textarticle" required {...{...props, className: `af-class-text-field-2 w-input ${props.className || ''}`}}>{props.children}</input>)}{map(proxies['submit'], props => <input type="submit" value="Submit" data-wait="Please wait..." {...{...props, className: `af-class-submit-button w-button ${props.className || ''}`}}>{props.children}</input>)}
+                  </div>{map(proxies['textarticle'], props => <input type="text" maxLength={256} name="textarticle" data-name="textarticle" placeholder="Enter your text here. . ." id="textarticle" required {...{...props, className: `af-class-text-field-2 w-input ${props.className || ''}`}}>{props.children}</input>)}{map(proxies['submit'], props => <input type="submit" value="Submit" data-wait="Please wait..." {...{...props, className: `af-class-submit-button w-button ${props.className || ''}`}}>{props.children}</input>)}
                 </form>
                 <div className="w-form-done">
                   <div>Thank you! Your submission has been received!</div>
